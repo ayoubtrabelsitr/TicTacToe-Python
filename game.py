@@ -8,8 +8,12 @@ def main():
     def draw_grid():
         for i in range(3):
             for j in range(3):
-                button=Button(window,bg=bg_code,width=50,height=15)
-                button.grid(row=j, column=i)
+                button=Button(window,bg=bg_code,text="X",font=('Arial',70))
+                button.grid(row=j, column=i,sticky='nsew')
+        for i in range(3):
+            window.grid_columnconfigure(i, weight=1)  # Colonne s'étend proportionnellement
+            window.grid_rowconfigure(i, weight=1)     # Ligne s'étend proportionnellement
+
 
     window.title("TicTacToe")
     window.geometry("1080x720")
