@@ -1,6 +1,9 @@
 from tkinter import *
+import time
+
 current_player = 'X'
 win = False
+
 def main():
 
     #creation du fenetre de jeu
@@ -14,17 +17,23 @@ def main():
             current_player = '0'
         else:
             current_player = 'X'
+
     def print_winner():
         global win
         win = True
-        print("Le joueur " +current_player+ " a gagné :) ")    
-    
-    def check_nul():
-        print("Match nul")
+        window_f=Tk()
+        window_f.title("TicTacToe")
+        window_f.geometry("400x100")
+        window_f.iconbitmap("jeu.ico")
+        bg_code = '#3996BC'
+        
+        home_title = Label(window_f,bg=bg_code, text=("Le joueur " +current_player+ " a gagné :) "),font=("Arial",20))
+        home_title.place(relx=0.5, rely=0.25,anchor='center')
+        window_f.config(bg=bg_code)
+        window_f.mainloop()
+   
 
-    
-    def check_win(row,column):
-       
+    def check_win(row,column): 
        #horizontale 
        count = 0
        for i in range(3):
@@ -33,6 +42,7 @@ def main():
                count += 1
        if count == 3:
            print_winner()
+           
         #verticale 
        count=0
        for i in range(3):
@@ -41,6 +51,7 @@ def main():
                count += 1
        if count == 3:
            print_winner()
+
        #diagonale    
        count=0
        for i in range(3):
@@ -49,6 +60,7 @@ def main():
                count += 1
        if count == 3:
            print_winner()
+
        #diagonale inverse   
        count=0
        for i in range(3):
@@ -67,11 +79,7 @@ def main():
                        count += 1
            if count == 9:
                print("Match nul")
-                   
-
-
-
-           
+  
 
     def draw_grid():
         for column in range(3):
@@ -91,17 +99,27 @@ def main():
         
             check_win(row,column )
             switch_player()
- 
+
+    def new_fichier():
+        window.destroy()
+        main()
+
         
     buttons = []
 
     window.title("TicTacToe")
-    window.geometry("1080x720")
+    window.geometry("780x520")
     window.minsize(300,300)
     window.iconbitmap("jeu.ico")
     bg_code = '#7996BC'
-   
-    window.config(bg=bg_code)
+    #barre de menu
+    menu_bar = Menu(window)
+    file_menu = Menu(menu_bar, tearoff=0)
+    file_menu.add_command(label="Nouveau", command=new_fichier)
+    file_menu.add_command(label="Quitter", command=window.destroy)
+    menu_bar.add_cascade(label="Fichier", menu=file_menu) 
+
+    window.config(bg=bg_code, menu=menu_bar)
     draw_grid()
   
     window.mainloop()

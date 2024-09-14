@@ -2,7 +2,6 @@ from tkinter import *
 import webbrowser
 from game import main
 
-
 #fonctions
 def siteweb():
     webbrowser.open_new("https://github.com/ayoubtrabelsitr/TicTacToe-Python")
@@ -11,7 +10,6 @@ def function_start():
     root.destroy()
     main()
     
-
 #creation du fenetre de jeu
 root=Tk()
 
