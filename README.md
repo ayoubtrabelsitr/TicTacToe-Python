@@ -48,5 +48,6 @@ Le projet est composé de deux fichiers principaux :
 
 ## Captures
 **Page d'accueil**
-![Page d'accueil](acceuil.jpg)
+<img src="acceuil.jpg" alt="Page d'accueil" width="400"/>
+
 
