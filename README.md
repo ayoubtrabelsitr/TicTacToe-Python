@@ -1,7 +1,7 @@
 # TicTacToe-Python
 
 ## Description
-Ce projet est un jeu de TicTacToe (ou Morpion) simple développé en Python avec la bibliothèque `tkinter` pour l'interface graphique. Le jeu permet à deux joueurs de jouer en alternant les symboles "X" et "O" sur une grille 3x3. Le joueur qui réussit à aligner trois symboles horizontalement, verticalement ou en diagonale remporte la partie.
+Ce projet est un jeu de TicTacToe développé en Python avec la bibliothèque `tkinter` pour l'interface graphique. Le jeu permet à deux joueurs de jouer en alternant les symboles "X" et "O" sur une grille 3x3. Le joueur qui réussit à aligner trois symboles horizontalement, verticalement ou en diagonale remporte la partie.
 
 ## Fonctionnalités
 - Interface graphique intuitive avec `tkinter`.
