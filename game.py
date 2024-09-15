@@ -1,6 +1,6 @@
 from tkinter import *
 import time
-
+from tkinter import messagebox  
 current_player = 'X'
 win = False
 
@@ -21,18 +21,11 @@ def main():
     def print_winner():
         global win
         win = True
-        window_f=Tk()
-        window_f.title("TicTacToe")
-        window_f.geometry("400x100")
-        window_f.iconbitmap("jeu.ico")
         bg_code = '#3996BC'
-        
-        home_title = Label(window_f,bg=bg_code, text=("Le joueur " +current_player+ " a gagné :) "),font=("Arial",20))
-        home_title.place(relx=0.5, rely=0.25,anchor='center')
-        window_f.config(bg=bg_code)
-        window_f.mainloop()
-   
-
+        game_over = messagebox.showinfo ( "Game over" , "Player {} a gangé".format(current_player) )  
+        if game_over:
+            new_fichier()
+ 
     def check_win(row,column): 
        #horizontale 
        count = 0
@@ -103,9 +96,6 @@ def main():
     def new_fichier():
         window.destroy()
         main()
-
-        
-    buttons = []
 
     window.title("TicTacToe")
     window.geometry("780x520")
