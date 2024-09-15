@@ -33,4 +33,6 @@ Le projet est composé de deux fichiers principaux :
 1. **Cloner le dépôt GitHub :**
    ```bash
    git clone https://github.com/ayoubtrabelsitr/TicTacToe-Python.git
-
+2. **Accéder au répertoire du projet :**
+   ```bash
+   cd TicTacToe-Python
