@@ -36,3 +36,17 @@ Le projet est composé de deux fichiers principaux :
 2. **Accéder au répertoire du projet :**
    ```bash
    cd TicTacToe-Python
+3. **Installer les dépendances :**
+   Assurez-vous d'avoir Python installé (version 3 ou supérieure).
+   Aucune bibliothèque externe n'est requise, car tkinter est inclus avec Python par défaut.
+
+## Utilisation
+- Lancer le jeu : Exécutez le fichier home.py pour démarrer l'interface d'accueil du jeu :
+- Commencer une partie : Cliquez sur le bouton "Start" pour démarrer le jeu TicTacToe.
+- Quitter le jeu : Vous pouvez quitter à tout moment via le bouton "Exit" ou en fermant la fenêtre.
+- Voir le code source : Cliquez sur le bouton "Code source" pour accéder à la page GitHub du projet.
+
+## Captures
+**Page d'accueil**
+
+
