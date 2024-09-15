@@ -47,7 +47,17 @@ Le projet est composé de deux fichiers principaux :
 - Voir le code source : Cliquez sur le bouton "Code source" pour accéder à la page GitHub du projet.
 
 ## Captures
+
 **Page d'accueil**
-<img src="acceuil.jpg" alt="Page d'accueil" width="400"/>
+
+<img src="acceuil.jpg" width="400"/>
+
+**Jeu**
+
+<img src="game.jpg" width="400"/>
+
+**Menu**
+
+<img src="menu.png" width="400"/>
 
 
