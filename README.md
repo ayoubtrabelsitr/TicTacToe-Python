@@ -54,7 +54,7 @@ Le projet est composé de deux fichiers principaux :
 
 **Jeu**
 
-<img src="game.jpg" width="400"/>
+<img src="gamee.jpg" width="400"/>
 
 **Menu**
 
